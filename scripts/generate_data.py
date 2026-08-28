@@ -11,8 +11,8 @@ import os
 import re
 import json
 
-IMG_DIR = "site/assets/img/full"
-OUT_FILE = "site/data.js"
+IMG_DIR = "docs/assets/img/full"
+OUT_FILE = "docs/data.js"
 
 SMALL_WORDS = {"on", "and", "with", "the", "of", "in", "a", "an", "at", "for"}
 

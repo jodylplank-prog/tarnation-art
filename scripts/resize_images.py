@@ -14,8 +14,8 @@ import os
 from PIL import Image
 
 SRC_DIR = "renamed"
-OUT_THUMB = "site/assets/img/thumb"
-OUT_FULL = "site/assets/img/full"
+OUT_THUMB = "docs/assets/img/thumb"
+OUT_FULL = "docs/assets/img/full"
 
 THUMB_MAX = 640
 FULL_MAX = 1200
