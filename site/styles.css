@@ -1,0 +1,268 @@
+/* ---------- Reset & base ---------- */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0b0b0c;
+  color: #e9e6e0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  text-align: center;
+  padding: 2.75rem 1rem 1.75rem;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.35em;
+  color: #f2efe9;
+}
+
+.site-subtitle {
+  margin: 0.6rem 0 0;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8a8680;
+}
+
+/* ---------- Gallery grid (masonry via columns) ---------- */
+.gallery {
+  column-count: 2;
+  column-gap: 2px;
+  padding: 2px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  .gallery { column-count: 3; }
+}
+
+@media (min-width: 960px) {
+  .gallery { column-count: 4; }
+}
+
+@media (min-width: 1300px) {
+  .gallery { column-count: 5; }
+}
+
+.piece-card {
+  break-inside: avoid;
+  margin-bottom: 2px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background: #131314;
+}
+
+.piece-card img {
+  width: 100%;
+  display: block;
+  transition: transform 0.35s ease, opacity 0.35s ease;
+  opacity: 0;
+}
+
+.piece-card img.loaded {
+  opacity: 1;
+}
+
+.piece-card:hover img {
+  transform: scale(1.03);
+}
+
+.piece-card-label {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.9rem 0.7rem 0.6rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0));
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  pointer-events: none;
+}
+
+.piece-card:hover .piece-card-label,
+.piece-card:focus-visible .piece-card-label {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.piece-card-number {
+  color: #b23a3a;
+  font-weight: 600;
+  margin-right: 0.4em;
+}
+
+/* On touch devices there's no hover, so show the label faintly all the time */
+@media (hover: none) {
+  .piece-card-label {
+    opacity: 1;
+    transform: none;
+    background: linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0));
+  }
+}
+
+/* ---------- Lightbox ---------- */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(6, 6, 7, 0.97);
+  z-index: 100;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  overflow-y: auto;
+  padding: 3.5rem 1rem 2.5rem;
+}
+
+.lightbox[hidden] {
+  display: none;
+}
+
+.lightbox-content {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.lightbox-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.lightbox-image-block {
+  flex: 1 1 320px;
+  max-width: 520px;
+}
+
+.lightbox-image-block img {
+  width: 100%;
+  border: 1px solid #232224;
+  background: #131314;
+}
+
+.lightbox-image-caption {
+  margin-top: 0.5rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #8a8680;
+}
+
+.lightbox-info {
+  margin-top: 1.75rem;
+}
+
+.lightbox-number {
+  color: #b23a3a;
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  font-weight: 600;
+}
+
+.lightbox-name {
+  margin: 0.35rem 0 0.9rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f2efe9;
+}
+
+.lightbox-meta {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  color: #b7b3ac;
+}
+
+.lightbox-meta dt {
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #726e68;
+  margin: 0 0 0.2rem;
+}
+
+.lightbox-meta dd {
+  margin: 0;
+}
+
+.lightbox-close {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  border: 1px solid #2c2b2d;
+  background: rgba(19, 19, 20, 0.9);
+  color: #e9e6e0;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 110;
+}
+
+.lightbox-nav {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  border: 1px solid #2c2b2d;
+  background: rgba(19, 19, 20, 0.9);
+  color: #e9e6e0;
+  font-size: 1.7rem;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 110;
+}
+
+.lightbox-prev { left: 0.75rem; }
+.lightbox-next { right: 0.75rem; }
+
+@media (max-width: 640px) {
+  .lightbox-nav { display: none; }
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  text-align: center;
+  padding: 2.5rem 1rem 3rem;
+  font-size: 0.72rem;
+  color: #5c5952;
+  letter-spacing: 0.03em;
+}
