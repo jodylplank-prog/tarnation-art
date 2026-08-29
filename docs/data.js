@@ -65,15 +65,6 @@ const PIECES = [
     "price": "Price: TBD"
   },
   {
-    "number": "08",
-    "name": "Mermaid Skeleton",
-    "slug": "mermaid-skeleton",
-    "clean": "08-mermaid-skeleton.jpg",
-    "framed": null,
-    "size": "Size: TBD",
-    "price": "Price: TBD"
-  },
-  {
     "number": "09",
     "name": "Samurai Farmer",
     "slug": "samurai-farmer",
