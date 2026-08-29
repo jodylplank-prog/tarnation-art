@@ -165,9 +165,9 @@ const PIECES = [
   },
   {
     "number": "19",
-    "name": "Fanged Demon on Back",
-    "slug": "fanged-demon-on-back",
-    "clean": "19-fanged-demon-on-back.jpg",
+    "name": "Fanged Back Demon",
+    "slug": "fanged-back-demon",
+    "clean": "19-fanged-back-demon.jpg",
     "framed": null,
     "size": "Size: TBD",
     "price": "Price: TBD"
@@ -384,6 +384,24 @@ const PIECES = [
     "name": "Toad with Skull Pipe",
     "slug": "toad-with-skull-pipe",
     "clean": "43-toad-with-skull-pipe.jpg",
+    "framed": null,
+    "size": "Size: TBD",
+    "price": "Price: TBD"
+  },
+  {
+    "number": "44",
+    "name": "Apple Woman",
+    "slug": "apple-woman",
+    "clean": "44-apple-woman.jpg",
+    "framed": null,
+    "size": "Size: TBD",
+    "price": "Price: TBD"
+  },
+  {
+    "number": "45",
+    "name": "Strong Warrior",
+    "slug": "strong-warrior",
+    "clean": "45-strong-warrior.jpg",
     "framed": null,
     "size": "Size: TBD",
     "price": "Price: TBD"
