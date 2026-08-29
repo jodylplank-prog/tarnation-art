@@ -120,9 +120,9 @@ const PIECES = [
   },
   {
     "number": "14",
-    "name": "Horned Woman with Apple",
-    "slug": "horned-woman-with-apple",
-    "clean": "14-horned-woman-with-apple.jpg",
+    "name": "Apple Woman",
+    "slug": "apple-woman",
+    "clean": "14-apple-woman.jpg",
     "framed": null,
     "size": "Size: TBD",
     "price": "Price: TBD"
@@ -390,18 +390,9 @@ const PIECES = [
   },
   {
     "number": "44",
-    "name": "Apple Woman",
-    "slug": "apple-woman",
-    "clean": "44-apple-woman.jpg",
-    "framed": null,
-    "size": "Size: TBD",
-    "price": "Price: TBD"
-  },
-  {
-    "number": "45",
     "name": "Strong Warrior",
     "slug": "strong-warrior",
-    "clean": "45-strong-warrior.jpg",
+    "clean": "44-strong-warrior.jpg",
     "framed": null,
     "size": "Size: TBD",
     "price": "Price: TBD"
