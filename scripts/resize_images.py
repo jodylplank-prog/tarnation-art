@@ -11,7 +11,7 @@ since Pillow re-encodes from raw pixels), and re-saves as JPEG.
 """
 import glob
 import os
-from PIL import Image
+from PIL import Image, ImageOps
 
 SRC_DIR = "renamed"
 OUT_THUMB = "docs/assets/img/thumb"
@@ -35,6 +35,10 @@ def resize_to(im, max_edge):
 def process(path):
     name = os.path.splitext(os.path.basename(path))[0]
     im = Image.open(path)
+    # Bake in the camera's EXIF rotation before resizing/re-saving, since
+    # re-encoding below drops the EXIF tag that would otherwise tell a
+    # browser how to display it (this is why phone photos were sideways).
+    im = ImageOps.exif_transpose(im)
     if im.mode != "RGB":
         im = im.convert("RGB")
 
