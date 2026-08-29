@@ -72,10 +72,7 @@
       '<div class="lightbox-info">' +
       '<div class="lightbox-number">No. ' + piece.number + "</div>" +
       '<h2 class="lightbox-name">' + piece.name + "</h2>" +
-      '<dl class="lightbox-meta">' +
-      "<div><dt>Size</dt><dd>" + piece.size + "</dd></div>" +
-      "<div><dt>Price</dt><dd>" + piece.price + "</dd></div>" +
-      "</dl>" +
+      '<a class="lightbox-order-link" href="https://m.me/jody.plank" target="_blank" rel="noopener">Message me on Messenger to order</a>' +
       "</div>";
 
     lightboxContent.innerHTML = html;
