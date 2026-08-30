@@ -2,304 +2,315 @@
 // Update the piece 'name' field as needed.
 const PIECES = [
   {
-    "number": "01",
-    "name": "Cobra Commander Figure",
-    "slug": "cobra-commander-figure",
-    "clean": "01-cobra-commander-figure.jpg",
-    "framed": null
-  },
-  {
     "number": "02",
     "name": "Hand Fanged Jaw",
     "slug": "hand-fanged-jaw",
     "clean": "02-hand-fanged-jaw.jpg",
-    "framed": "02-hand-fanged-jaw-framed.jpg"
+    "framed": "02-hand-fanged-jaw-framed.jpg",
+    "labelTheme": "dark"
   },
   {
     "number": "03",
     "name": "Priestess and Leopards",
     "slug": "priestess-and-leopards",
     "clean": "03-priestess-and-leopards.jpg",
-    "framed": null
+    "framed": null,
+    "labelTheme": "light"
   },
   {
     "number": "04",
     "name": "Hell Hand",
     "slug": "hell-hand",
     "clean": "04-hell-hand.jpg",
-    "framed": "04-hell-hand-framed.jpg"
+    "framed": "04-hell-hand-framed.jpg",
+    "labelTheme": "light"
   },
   {
     "number": "05",
     "name": "Skull Mirror Woman",
     "slug": "skull-mirror-woman",
     "clean": "05-skull-mirror-woman.jpg",
-    "framed": "05-skull-mirror-woman-framed.jpg"
+    "framed": "05-skull-mirror-woman-framed.jpg",
+    "labelTheme": "dark"
   },
   {
     "number": "06",
     "name": "Bound in Flames",
     "slug": "bound-in-flames",
     "clean": "06-bound-in-flames.jpg",
-    "framed": "06-bound-in-flames-framed.jpg"
+    "framed": "06-bound-in-flames-framed.jpg",
+    "labelTheme": "dark"
   },
   {
     "number": "07",
     "name": "Tattooed Banana",
     "slug": "tattooed-banana",
     "clean": "07-tattooed-banana.jpg",
-    "framed": "07-tattooed-banana-framed.jpg"
+    "framed": "07-tattooed-banana-framed.jpg",
+    "labelTheme": "light"
   },
   {
     "number": "09",
     "name": "Samurai Farmer",
     "slug": "samurai-farmer",
     "clean": "09-samurai-farmer.jpg",
-    "framed": null
-  },
-  {
-    "number": "10",
-    "name": "Gollum",
-    "slug": "gollum",
-    "clean": "10-gollum.jpg",
-    "framed": null
+    "framed": null,
+    "labelTheme": "light"
   },
   {
     "number": "11",
     "name": "Swordswoman Severed Head",
     "slug": "swordswoman-severed-head",
     "clean": "11-swordswoman-severed-head.jpg",
-    "framed": null
+    "framed": null,
+    "labelTheme": "light"
   },
   {
     "number": "12",
     "name": "Dapper Duck",
     "slug": "dapper-duck",
     "clean": "12-dapper-duck.jpg",
-    "framed": null
+    "framed": null,
+    "labelTheme": "light"
   },
   {
     "number": "13",
     "name": "Purple Oni Mask",
     "slug": "purple-oni-mask",
     "clean": "13-purple-oni-mask.jpg",
-    "framed": null
+    "framed": null,
+    "labelTheme": "light"
   },
   {
     "number": "14",
     "name": "Apple Woman",
     "slug": "apple-woman",
     "clean": "14-apple-woman.jpg",
-    "framed": null
+    "framed": null,
+    "labelTheme": "light"
   },
   {
     "number": "15",
     "name": "Split Skull Face Smoking",
     "slug": "split-skull-face-smoking",
     "clean": "15-split-skull-face-smoking.jpg",
-    "framed": null
+    "framed": null,
+    "labelTheme": "light"
   },
   {
     "number": "16",
     "name": "Tattooed Cat and Kitten",
     "slug": "tattooed-cat-and-kitten",
     "clean": "16-tattooed-cat-and-kitten.jpg",
-    "framed": null
+    "framed": null,
+    "labelTheme": "light"
   },
   {
     "number": "17",
     "name": "Skeleton Dragonfly",
     "slug": "skeleton-dragonfly",
     "clean": "17-skeleton-dragonfly.jpg",
-    "framed": null
+    "framed": null,
+    "labelTheme": "light"
   },
   {
     "number": "18",
     "name": "Skull Faced Woman on Phone",
     "slug": "skull-faced-woman-on-phone",
     "clean": "18-skull-faced-woman-on-phone.jpg",
-    "framed": null
+    "framed": null,
+    "labelTheme": "light"
   },
   {
     "number": "19",
     "name": "Fanged Back Demon",
     "slug": "fanged-back-demon",
     "clean": "19-fanged-back-demon.jpg",
-    "framed": null
+    "framed": null,
+    "labelTheme": "light"
   },
   {
     "number": "20",
     "name": "Skeleton Seahorse",
     "slug": "skeleton-seahorse",
     "clean": "20-skeleton-seahorse.jpg",
-    "framed": null
+    "framed": null,
+    "labelTheme": "light"
   },
   {
     "number": "21",
     "name": "Crocodile Toe Clippers",
     "slug": "crocodile-toe-clippers",
     "clean": "21-crocodile-toe-clippers.jpg",
-    "framed": null
+    "framed": null,
+    "labelTheme": "light"
   },
   {
     "number": "22",
     "name": "Skeleton Spider Poison Bottle",
     "slug": "skeleton-spider-poison-bottle",
     "clean": "22-skeleton-spider-poison-bottle.jpg",
-    "framed": null
+    "framed": null,
+    "labelTheme": "light"
   },
   {
     "number": "23",
     "name": "Tribal Skull Mask",
     "slug": "tribal-skull-mask",
     "clean": "23-tribal-skull-mask.jpg",
-    "framed": null
+    "framed": null,
+    "labelTheme": "light"
   },
   {
     "number": "24",
     "name": "Native Dancer",
     "slug": "native-dancer",
     "clean": "24-native-dancer.jpg",
-    "framed": null
+    "framed": null,
+    "labelTheme": "light"
   },
   {
     "number": "25",
     "name": "Crocodile Heel",
     "slug": "crocodile-heel",
     "clean": "25-crocodile-heel.jpg",
-    "framed": null
+    "framed": null,
+    "labelTheme": "light"
   },
   {
     "number": "26",
     "name": "Blue Oni Mask",
     "slug": "blue-oni-mask",
     "clean": "26-blue-oni-mask.jpg",
-    "framed": null
+    "framed": null,
+    "labelTheme": "dark"
   },
   {
     "number": "27",
     "name": "Red Oni Floral Tattoo",
     "slug": "red-oni-floral-tattoo",
     "clean": "27-red-oni-floral-tattoo.jpg",
-    "framed": null
+    "framed": null,
+    "labelTheme": "light"
   },
   {
     "number": "28",
     "name": "Skull Chalice Tentacles",
     "slug": "skull-chalice-tentacles",
     "clean": "28-skull-chalice-tentacles.jpg",
-    "framed": null
+    "framed": null,
+    "labelTheme": "light"
   },
   {
     "number": "29",
     "name": "Horned Girl Exposed Ribs",
     "slug": "horned-girl-exposed-ribs",
     "clean": "29-horned-girl-exposed-ribs.jpg",
-    "framed": null
+    "framed": null,
+    "labelTheme": "light"
   },
   {
     "number": "30",
     "name": "Rhino Ballerina",
     "slug": "rhino-ballerina",
     "clean": "30-rhino-ballerina.jpg",
-    "framed": null
+    "framed": null,
+    "labelTheme": "light"
   },
   {
     "number": "31",
     "name": "Medusa Portrait",
     "slug": "medusa-portrait",
     "clean": "31-medusa-portrait.jpg",
-    "framed": null
+    "framed": null,
+    "labelTheme": "light"
   },
   {
     "number": "32",
     "name": "Koi Fish Woman",
     "slug": "koi-fish-woman",
     "clean": "32-koi-fish-woman.jpg",
-    "framed": null
+    "framed": null,
+    "labelTheme": "light"
   },
   {
     "number": "33",
     "name": "Demon Faced Scorpion",
     "slug": "demon-faced-scorpion",
     "clean": "33-demon-faced-scorpion.jpg",
-    "framed": null
+    "framed": null,
+    "labelTheme": "light"
   },
   {
     "number": "34",
     "name": "Bone Dagger Eye",
     "slug": "bone-dagger-eye",
     "clean": "34-bone-dagger-eye.jpg",
-    "framed": null
+    "framed": null,
+    "labelTheme": "light"
   },
   {
     "number": "35",
     "name": "Skeleton Wasp",
     "slug": "skeleton-wasp",
     "clean": "35-skeleton-wasp.jpg",
-    "framed": null
+    "framed": null,
+    "labelTheme": "light"
   },
   {
     "number": "36",
     "name": "Skeleton Mantis",
     "slug": "skeleton-mantis",
     "clean": "36-skeleton-mantis.jpg",
-    "framed": null
-  },
-  {
-    "number": "37",
-    "name": "Stormtrooper at Urinal",
-    "slug": "stormtrooper-at-urinal",
-    "clean": "37-stormtrooper-at-urinal.jpg",
-    "framed": null
+    "framed": null,
+    "labelTheme": "light"
   },
   {
     "number": "38",
     "name": "Skeleton Skateboard Woman",
     "slug": "skeleton-skateboard-woman",
     "clean": "38-skeleton-skateboard-woman.jpg",
-    "framed": null
+    "framed": null,
+    "labelTheme": "light"
   },
   {
     "number": "39",
     "name": "Skeleton Centipede",
     "slug": "skeleton-centipede",
     "clean": "39-skeleton-centipede.jpg",
-    "framed": null
+    "framed": null,
+    "labelTheme": "light"
   },
   {
     "number": "40",
     "name": "Skull Back Beetle",
     "slug": "skull-back-beetle",
     "clean": "40-skull-back-beetle.jpg",
-    "framed": null
-  },
-  {
-    "number": "41",
-    "name": "Lego Oni Samurai",
-    "slug": "lego-oni-samurai",
-    "clean": "41-lego-oni-samurai.jpg",
-    "framed": null
+    "framed": null,
+    "labelTheme": "light"
   },
   {
     "number": "42",
     "name": "Mermaid Embracing Herself",
     "slug": "mermaid-embracing-herself",
     "clean": "42-mermaid-embracing-herself.jpg",
-    "framed": null
+    "framed": null,
+    "labelTheme": "dark"
   },
   {
     "number": "43",
     "name": "Toad with Skull Pipe",
     "slug": "toad-with-skull-pipe",
     "clean": "43-toad-with-skull-pipe.jpg",
-    "framed": null
+    "framed": null,
+    "labelTheme": "dark"
   },
   {
     "number": "44",
     "name": "Strong Warrior",
     "slug": "strong-warrior",
     "clean": "44-strong-warrior.jpg",
-    "framed": null
+    "framed": null,
+    "labelTheme": "light"
   }
 ];

@@ -32,7 +32,7 @@
     });
 
     const label = document.createElement("div");
-    label.className = "piece-card-label";
+    label.className = "piece-card-label theme-" + (piece.labelTheme || "dark");
     label.innerHTML =
       '<span class="piece-card-number">' + piece.number + "</span>" +
       "<span>" + piece.name + "</span>";

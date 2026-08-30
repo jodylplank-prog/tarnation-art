@@ -131,7 +131,6 @@ button {
   right: 0;
   bottom: 0;
   padding: 0.9rem 0.7rem 0.6rem;
-  background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0));
   font-size: 0.78rem;
   letter-spacing: 0.03em;
   opacity: 0;
@@ -146,8 +145,28 @@ button {
   transform: translateY(0);
 }
 
+/* Theme picked per-image at build time (scripts/generate_data.py) by
+   sampling the actual pixels behind the label, so the scrim and text
+   always contrast with that specific thumbnail instead of guessing. */
+.piece-card-label.theme-dark {
+  background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0));
+  color: #f2efe9;
+}
+
+.piece-card-label.theme-dark .piece-card-number {
+  color: #e2635f;
+}
+
+.piece-card-label.theme-light {
+  background: linear-gradient(to top, rgba(255,255,255,0.92), rgba(255,255,255,0));
+  color: #1a1817;
+}
+
+.piece-card-label.theme-light .piece-card-number {
+  color: #8a1f1f;
+}
+
 .piece-card-number {
-  color: #b23a3a;
   font-weight: 600;
   margin-right: 0.4em;
 }
@@ -157,7 +176,6 @@ button {
   .piece-card-label {
     opacity: 1;
     transform: none;
-    background: linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0));
   }
 }
 
