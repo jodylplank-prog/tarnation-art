@@ -191,7 +191,7 @@ const PIECES = [
     "slug": "red-oni-floral-tattoo",
     "clean": "27-red-oni-floral-tattoo.jpg",
     "framed": null,
-    "labelTheme": "light"
+    "labelTheme": "dark"
   },
   {
     "number": "28",
